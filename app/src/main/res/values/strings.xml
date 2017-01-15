@@ -1,0 +1,84 @@
+<resources>
+    <string name="app_name">My Application4</string>
+    <string name="action_settings">Settings</string>
+
+
+
+    <string name="string.accessibility_content_view">webviewchromium_accessibility_content_view</string>
+
+
+
+
+    <string name="low_memory_error">Unable to complete previous operation due to low memory</string><string name="opening_file_error">Failed to open selected file</string>
+    <string name="copy_to_clipboard_failure_message">Failed to copy to the clipboard</string>
+    <string name="accessibility_date_picker_month">Month</string><string name="accessibility_date_picker_year">Year</string><string name="date_picker_dialog_set">Set</string><string name="month_picker_dialog_title">Set month</string><string name="accessibility_date_picker_week">Week</string><string name="week_picker_dialog_title">Set week</string><string name="time_picker_dialog_am">AM</string><string name="time_picker_dialog_pm">PM</string><string name="time_picker_dialog_title">Set time</string><string name="accessibility_time_picker_hour">Hour</string><string name="accessibility_time_picker_minute">Minute</string><string name="accessibility_time_picker_second">Second</string><string name="accessibility_time_picker_milli">Millisecond</string><string name="accessibility_time_picker_ampm">AM/PM</string><string name="time_picker_dialog_hour_minute_separator">:</string><string name="time_picker_dialog_minute_second_separator">:</string><string name="time_picker_dialog_second_subsecond_separator">.</string><string name="date_time_picker_dialog_title">Set date and time</string><string name="accessibility_datetime_picker_date">Date</string><string name="accessibility_datetime_picker_time">Time</string><string name="date_picker_dialog_other_button_label">Other</string><string name="date_picker_dialog_title">Set date</string><string name="date_picker_dialog_clear">Clear</string><string name="autofill_popup_content_description">Showing autofill popup</string><string name="password_generation_popup_content_description">Showing password generation popup</string><string name="autofill_keyboard_accessory_content_description">Suggestions available</string><string name="updating_chrome">Updating Chrome…</string><string name="abc_action_bar_home_description">Navigate home</string><string name="abc_action_bar_home_description_format">%1$s, %2$s</string><string name="abc_action_bar_home_subtitle_description_format">%1$s, %2$s, %3$s</string><string name="abc_action_bar_up_description">Navigate up</string><string name="abc_action_menu_overflow_description">More options</string><string name="abc_action_mode_done">Done</string><string name="abc_activity_chooser_view_see_all">See all</string><string name="abc_activitychooserview_choose_application">Choose an app</string><string name="abc_capital_off">OFF</string><string name="abc_capital_on">ON</string><string name="abc_search_hint">Search…</string><string name="abc_searchview_description_clear">Clear query</string><string name="abc_searchview_description_query">Search query</string><string name="abc_searchview_description_search">Search</string><string name="abc_searchview_description_submit">Submit query</string><string name="abc_searchview_description_voice">Voice search</string><string name="abc_shareactionprovider_share_with">Share with</string><string name="abc_shareactionprovider_share_with_application">Share with %s</string><string name="abc_toolbar_collapse_description">Collapse</string><string name="search_menu_title">Search</string><string name="status_bar_notification_info_overflow">999+</string><string name="abc_font_family_body_1_material">sans-serif</string><string name="abc_font_family_body_2_material">sans-serif-medium</string><string name="abc_font_family_button_material">sans-serif-medium</string><string name="abc_font_family_caption_material">sans-serif</string><string name="abc_font_family_display_1_material">sans-serif</string><string name="abc_font_family_display_2_material">sans-serif</string><string name="abc_font_family_display_3_material">sans-serif</string><string name="abc_font_family_display_4_material">sans-serif-light</string><string name="abc_font_family_headline_material">sans-serif</string><string name="abc_font_family_menu_material">sans-serif</string><string name="abc_font_family_subhead_material">sans-serif</string><string name="abc_font_family_title_material">sans-serif-medium</string><string name="actionbar_share">Share</string>
+    <string name="actionbar_web_search">Web search</string>
+    <string name="actionbar_textselection_title">Text selection</string>
+    <string name="media_player_error_title">Cannot play video</string>
+    <string name="media_player_error_text_invalid_progressive_playback">Sorry, this video is not valid for streaming to this device.</string>
+    <string name="media_player_error_text_unknown">Sorry, this video cannot be played.</string>
+    <string name="media_player_error_button">OK</string>
+    <string name="profiler_started_toast">Profiler started</string><string name="profiler_stopped_toast">Profiler finished. Results are in %1$s.</string>
+    <string name="profiler_no_storage_toast">"Can't start profiler because external storage is not ready"</string><string name="profiler_error_toast">Failed to start profiler</string><string name="url_hint">Type URL Here</string><string name="browser_process_initialization_failed">Initialization failed.</string>
+
+
+
+
+
+
+    org.chromium.content.R.string.actionbar_web_search =
+    com.android.internal.R.string.websearch;
+    org.chromium.content.R.string.date_picker_dialog_clear =
+    com.android.internal.R.string.webviewchromium_date_picker_dialog_clear;
+    org.chromium.content.R.string.date_picker_dialog_set =
+    com.android.internal.R.string.webviewchromium_date_picker_dialog_set;
+    org.chromium.content.R.string.date_picker_dialog_title =
+    com.android.internal.R.string.webviewchromium_date_picker_dialog_title;
+    org.chromium.content.R.string.date_time_picker_dialog_title =
+    com.android.internal.R.string.webviewchromium_date_time_picker_dialog_title;
+    org.chromium.content.R.string.media_player_error_button =
+    com.android.internal.R.string.webviewchromium_media_player_error_button;
+    org.chromium.content.R.string.media_player_error_text_invalid_progressive_playback =
+    com.android.internal.R.string.webviewchromium_media_player_error_text_invalid_progressive_playback;
+    org.chromium.content.R.string.media_player_error_text_unknown =
+    com.android.internal.R.string.webviewchromium_media_player_error_text_unknown;
+    org.chromium.content.R.string.media_player_error_title =
+    com.android.internal.R.string.webviewchromium_media_player_error_title;
+    org.chromium.content.R.string.media_player_loading_video =
+    com.android.internal.R.string.webviewchromium_media_player_loading_video;
+    org.chromium.content.R.string.month_picker_dialog_title =
+    com.android.internal.R.string.webviewchromium_month_picker_dialog_title;
+
+
+    org.chromium.content.R.string.profiler_no_storage_toast =
+    com.android.internal.R.string.webviewchromium_profiler_no_storage_toast;
+
+
+
+
+
+    org.chromium.content.R.string.time_picker_dialog_am =
+    com.android.internal.R.string.webviewchromium_time_picker_dialog_am;
+    org.chromium.content.R.string.time_picker_dialog_pm =
+    com.android.internal.R.string.webviewchromium_time_picker_dialog_pm;
+    org.chromium.content.R.string.week_picker_dialog_title =
+    com.android.internal.R.string.webviewchromium_week_picker_dialog_title;
+    org.chromium.ui.R.string.low_memory_error =
+    com.android.internal.R.string.webviewchromium_low_memory_error;
+    org.chromium.ui.R.string.opening_file_error =
+    com.android.internal.R.string.webviewchromium_opening_file_error;
+    org.chromium.ui.R.string.color_picker_button_more =
+    com.android.internal.R.string.webviewchromium_color_picker_button_more;
+    org.chromium.ui.R.string.color_picker_hue =
+    com.android.internal.R.string.webviewchromium_color_picker_hue;
+    org.chromium.ui.R.string.color_picker_saturation =
+    com.android.internal.R.string.webviewchromium_color_picker_saturation;
+    org.chromium.ui.R.string.color_picker_value =
+    com.android.internal.R.string.webviewchromium_color_picker_value;
+    org.chromium.ui.R.string.color_picker_button_set =
+    com.android.internal.R.string.webviewchromium_color_picker_button_set;
+    org.chromium.ui.R.string.color_picker_button_cancel =
+    com.android.internal.R.string.webviewchromium_color_picker_button_cancel;
+    org.chromium.ui.R.string.color_picker_dialog_title =
+    com.android.internal.R.string.webviewchromium_color_picker_dialog_title;
+</resources>

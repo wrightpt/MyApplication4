@@ -1,0 +1,205 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+    defaultConfig {
+        applicationId "com.example.c.myapplication4"
+        minSdkVersion 17
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        ndk {
+            abiFilters 'armeabi-v7a'
+           // stl = 'gnustl_shared'
+
+            //stl =  'gnustl_shared'
+
+            //c++_static
+            //stlport_static
+
+           // cFlags  "-I" + file("/home/c/Downloads/chromium1/src/").absolutePath
+           // cFlags  "-I" + file("/home/c/Downloads/chromium1/").absolutePath
+
+
+
+            //'x86', 'x86_64', 'armeabi',  'arm64-v8a'
+        }
+        externalNativeBuild {
+            cmake {
+                cppFlags "-std=c++11  -Wno-traditional"
+
+              //  stl = "gnustl_shared"
+
+               // stl "stlport_static"
+
+               // stl "gnustl_shared"
+
+
+
+                //cppFlags  "-I" + file("/home/c/Downloads/chromium1/src/").absolutePath
+                //cppFlags  "-I" + file("/home/c/Downloads/chromium1/").absolutePath
+
+                cppFlags  "-I" + file("/home/c/Videos/")
+                cppFlags "-I" + file("/home/c/Videos/src/")
+                cppFlags "-I" + file("/home/c/Videos/src/out/Default/gen/base/base_jni_headers/base/")
+
+            }
+        }
+
+        sourceSets {
+
+            main{
+
+
+
+
+            main.java.srcDirs += '/home/c/Videos/src/base/android/java/src/'
+            main.java.srcDirs += '/home/c/Videos/src/content/public/android/java/src/'
+            main.java.srcDirs += '/home/c/Videos/src/ui/android/java/src/'
+            main.java.srcDirs += '/home/c/Videos/src/third_party/jsr-305/src/ri/src/main/java/'
+            main.java.srcDirs += '/home/c/Videos/src/content/shell/android/java/src/'
+            main.java.srcDirs += '/home/c/Videos/src/out/Default/gen/base/org/'
+
+            main.java.srcDirs += '/home/c/Videos/src/out/Default/gen/base/build_config_gen/'
+
+            main.java.srcDirs += '/home/c/Videos/src/out/Default/gen/content/public/android/'
+
+            main.java.srcDirs += '/home/c/Videos/src/out/Default/gen/base/'
+
+            main.java.srcDirs += '/home/c/Videos/src/out/Default/gen/ui/android/'
+
+            main.java.srcDirs += '/home/c/Videos/src/out/Default/gen/third_party/WebKit/public/'
+
+            main.java.srcDirs += '/home/c/Videos/src/out/Default/gen/ui/touch_selection/'
+
+
+
+            main.java.srcDirs += '/home/c/Videos/src/out/Default/gen/services/shape_detection/public/interfaces/'
+
+            main.java.srcDirs += '/home/c/Videos/src/out/Default/gen/services/shape_detection/public/interfaces/FaceDetectionProvider/'
+
+            main.java.srcDirs += '/home/c/Videos/src/device/gamepad/android/java/src/'
+            main.java.srcDirs += '/home/c/Videos/src/out/Default/gen/services/ui/public/interfaces/ime/'
+            main.java.srcDirs += '/home/c/Videos/src/out/Default/gen/third_party/WebKit/public/WebInput/'
+            main.java.srcDirs += '/home/c/Videos/src/out/Default/gen/third_party/WebKit/public/'
+
+            main.java.srcDirs += '/home/c/Videos/src/out/Default/gen/ui/touch_selection/'
+            main.java.srcDirs += '/home/c/Videos/src/out/Default/gen/content/public/android/'
+            main.java.srcDirs += '/home/c/Videos/src/out/Default/gen/content/public/android/navigation_controller/'
+            main.java.srcDirs += '/home/c/Videos/src/out/Default/gen/ui/android/'
+            main.java.srcDirs += '/home/c/Videos/src/content/public/android/java/src/'
+            main.java.srcDirs += '/home/c/Videos/src/out/Default/gen/content/public/android/Common_aidl/'
+            main.java.srcDirs += '/home/c/Videos/src/out/Default/gen/third_party/WebKit/public/platform/modules/shapedetection/'
+            main.java.srcDirs += '/home/c/Videos/src/out/Default/gen/third_party/WebKit/public/platform/modules/shapedetection/facedetectionprovider/'
+            main.java.srcDirs += '/home/c/Videos/src/mojo/public/java/system/src/'
+            main.java.srcDirs += '/home/c/Videos/src/mojo/public/java/bindings/src/'
+            main.java.srcDirs += '/home/c/Videos/src/out/Default/gen/mojo/public/interfaces/bindings/org/chromium/mojo/bindings/interfacecontrol/'
+
+            main.java.srcDirs += '/home/c/Videos/src/out/Default/gen/mojo/public/interfaces/bindings/'
+            main.java.srcDirs += '/home/c/Videos/src/services/service_manager/public/java/src/'
+            main.java.srcDirs += '/home/c/Videos/src/out/Default/gen/third_party/WebKit/public/platform/modules/facedetectionprovider/'
+            main.java.srcDirs += '/home/c/Videos/src/out/Default/gen/ui/accessibility/'
+            main.java.srcDirs += '/home/c/Videos/src/net/android/java/src/'
+            main.java.srcDirs += '/home/c/Videos/src/out/Default/gen/net/android/'
+            main.java.srcDirs += '/home/c/Videos/src/out/Default/gen/device/battery/'
+            main.java.srcDirs += '/home/c/Videos/src/out/Default/gen/device/vibration/'
+            main.java.srcDirs += '/home/c/Videos/src/mojo/android/system/src/'
+            main.java.srcDirs += '/home/c/Videos/src/device/battery/android/java/src/'
+            main.java.srcDirs += '/home/c/Videos/src/device/vibration/android/java/src/'
+            main.java.srcDirs += '/home/c/Videos/src/out/Default/gen/device/nfc/'
+            main.java.srcDirs += '/home/c/Videos/src/out/Default/gen/services/service_manager/public/interfaces/'
+
+            main.java.srcDirs += '/home/c/Videos/src/out/Default/gen/services/service_manager/public/interfaces/interfaceprovider/'
+            main.java.srcDirs += '/home/c/Videos/src/device/nfc/android/java/src/'
+            main.java.srcDirs += '/home/c/Videos/src/out/Default/gen/ui/android/Rjava/'
+
+            main.java.srcDirs += '/home/c/Videos/Link to gen/ui/android/rjava/'
+
+            main.java.srcDirs += '/home/c/Videos/Link to gen/device/battery/BatteryStatus/'
+
+            main.java.srcDirs += '/home/c/Videos/src/testing/android/reporter/java/src/'
+
+            main.java.srcDirs += '/home/c/Videos/src/third_party/junit/src/src/main/java/'
+
+
+
+
+            main.java.srcDirs += '/home/c/Videos/src/out/Default/gen/url/mojo/'
+            main.java.srcDirs += '/home/c/Videos/src/out/Default/gen/device/battery/BatteryStatus/org/chromium/device'
+            main.java.srcDirs += '/home/c/Videos/src/out/Default/gen/ui/android/'
+            main.java.srcDirs += '/home/c/Videos/src/out/Default/gen/ui/gfx/geometry/mojo/'
+            main.java.srcDirs += '/home/c/Videos/src/out/Default/gen/content/public/android/content_sources/org/chromium/content'
+            main.java.srcDirs += '/home/c/Videos/src/out/Default/gen/device/gamepad/'
+            main.java.srcDirs += '/home/c/Videos/src/out/Default/gen/ui/gfx/range/mojo/'
+
+            main.java.srcDirs += '/home/c/Videos/src/base/test/android/javatests/src/'
+            main.java.srcDirs += '/home/c/Videos/src/out/Default/gen/url/mojo/'
+
+            main.java.srcDirs += '/home/c/Videos/src/out/Default/gen/third_party/WebKit/public/platform/'
+
+            // main.java.srcDirs += '/home/c/Videos/src/chrome/android/java/src/'
+
+            main.java.srcDirs += '/home/c/Videos/Link to gen/content/browser/accessibility/'
+
+            main.java.srcDirs += '/home/c/Videos/src/out/Default/gen/device/gamepad/'
+
+        }
+
+
+
+            jniLibs {
+              //  jniLibs.srcDirs = 'libs'
+                jni.srcDirs += '/home/c/Downloads/chromium1/'
+
+          //     jniLibs.srcDirs += '/home/c/Videos/src/out/Default/gen/base/base_jni_headers/base/jni/LibraryLoader_jni.h'
+           //     jniLibs.srcDirs += '/home/c/Downloads/MyApplication4/app/src/main/obj/local/armeabi-v7a/libnative-codec-jni.so'
+
+             //   jniLibs.srcDirs += '/home/c/Downloads/MyApplication4/app/src/main/cpp/LibraryLoader_jni.h'
+              //  jniLibs.srcDirs += ['/home/c/Downloads/MyApplication4/app/src/main/jni/LibraryLoader_jni.h']
+           }
+
+        }
+
+    }
+
+
+
+
+
+           // }
+
+
+      //  }
+
+
+        buildTypes {
+            release {
+                minifyEnabled false
+                proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            }
+        }
+        externalNativeBuild {
+            cmake {
+                path "CMakeLists.txt"
+            }
+        }
+    }
+
+
+
+
+
+    dependencies {
+        compile fileTree(include: ['*.jar'], dir: 'libs')
+        androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+            exclude group: 'com.android.support', module: 'support-annotations'
+        })
+        compile 'com.android.support:appcompat-v7:25.1.0'
+        compile 'com.android.support:design:25.1.0'
+        testCompile 'junit:junit:4.12'
+        compile 'com.android.support:multidex:1.0.1'
+        compile files('libs/hamcrest-core-1.3.jar')
+    }
